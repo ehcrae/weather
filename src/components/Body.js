@@ -82,12 +82,10 @@ const Body = () => {
     const renderWeather = () => {
         return (
             <div className="body">
-                            <div className="tag">
-                    <h2>as of { time }, { location.name } is { condition.text.toLocaleLowerCase() }.</h2>
-                </div>
-    
                 <div className="tile-container">
                     <div className="tile-current">
+                        <img src={condition.icon} alt="weather"></img>
+                        <h4>as of { time }, { location.name } is { condition.text.toLocaleLowerCase() }.</h4>
                         <h4>temp: {weather.temp_c}</h4>
                         <h4>wind: {weather.wind_kph}</h4>
                     </div>
@@ -101,7 +99,7 @@ const Body = () => {
             <div className="search-container">
                 <h1 className="search-text">what's the weather like in </h1>
                 <form onSubmit={handleSubmit} className="search-form">
-                    <input type="text" spellCheck="false" placeholder="City"/>
+                    <input type="text" spellCheck="false" placeholder="Sydney?"/>
                 </form>
             </div>
             {weather ? renderWeather() : null}

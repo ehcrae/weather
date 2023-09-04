@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { key } from '../App';
+import { key } from '../config.js';
 
 const Body = () => {
     const [location, setLocation] = useState();

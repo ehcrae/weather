@@ -19,7 +19,6 @@ body {
 
 .search-container {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     min-width: 650px;
     margin: 0 auto;

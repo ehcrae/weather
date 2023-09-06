@@ -1,7 +1,7 @@
 const header = () => {
     return (
-        <header className="App-header">
-            { /* TODO: add dark mode toggle */ }
+        <header>
+            <h1>Weather App</h1>
         </header>
     );
 }
